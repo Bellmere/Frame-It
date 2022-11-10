@@ -1,0 +1,105 @@
+.section.banner {
+    padding: 160px 0 140px;
+}
+
+.main-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.banner__wrapper {
+    display: grid;
+    grid-template-columns: 37% 1fr;
+    gap: 100px;
+}
+
+.banner__title {
+    margin: 22px 0 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.4;
+    /* or 58px */
+
+
+    /* Title */
+
+    color: #474747;
+
+}
+
+.banner__text {
+    margin: 0 0 32px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    /* or 26px */
+
+
+    /* Title */
+
+    color: #474747;
+}
+
+.banner__btn {
+    padding: 12px 45px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    text-decoration: none;
+
+    color: #fff;
+    background: #FCB34E;
+    border-radius: 5px;
+    border: none;
+}
+
+.banner__image {
+    position: relative;
+}
+
+.banner__photo {
+    height: 475px;
+    max-width: 735px;
+    position: absolute;
+    bottom: -110px;
+    right: -150px;
+}
+
+.banner__photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner__icon--white {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.banner__icon--rigth-up {
+    position: absolute;
+    right: 0;
+    top: -19px;
+}
+
+.banner__icon--center-left {
+    position: absolute;
+    bottom: 58px;
+    left: 67px;
+}
+
+.banner__icon--left-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
