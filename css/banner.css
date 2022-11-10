@@ -1,3 +1,4 @@
+/* Banner Section */
 .section.banner {
     padding: 160px 0 140px;
 }
@@ -103,30 +104,62 @@
     left: 0;
 }
 
-@media screen and (max-width: 991px) {
-    .banner__wrapper {
-        gap: 50px;
+@media screen and (max-width: 1024px) {
+    .banner__image {
+        display: none;
     }
-}
 
-@media screen and (max-width: 767px) {
     .banner__wrapper {
         grid-template-columns: 1fr;
         gap: 0;
     }
 
-    .banner__image {
-        order: -1;
-    }
-
-    .banner__photo {
-        position: relative;
-        right: 0;
+    .section.banner {
+        padding: 160px 0 30px;
     }
 }
 
-@media screen and (max-width: 479px) {
-    .banner__icon--center-left {
-        display: none;
+@media screen and (max-width: 767px) {
+    .banner__title {
+        font-size: 52px;
     }
+}
+
+@media screen and (max-width:575px) {
+    .banner__title {
+        font-size: 42px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .banner__title {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Some of our previous projects include */
+.previous__title__box {
+    width: 30%;
+    position: relative;
+}
+
+.previous__title {
+    margin: 0 0 46px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.38;
+
+    /* Title */
+
+    color: #474747;
+}
+
+.previous__title__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
