@@ -12,7 +12,7 @@
 
 .banner__wrapper {
     display: grid;
-    grid-template-columns: 37% 1fr;
+    grid-template-columns: 40.8% 1fr;
     gap: 100px;
 }
 
@@ -125,8 +125,8 @@
     }
 }
 
-/* @media screen and (max-width: 479px) {
-    .banner__image {
+@media screen and (max-width: 479px) {
+    .banner__icon--center-left {
         display: none;
     }
-} */
+}
