@@ -3,8 +3,8 @@
     padding: 160px 0 140px;
 }
 
-.container {
-    max-width: 1220px;
+.main-container {
+    max-width: 1140px;
     width: 100%;
     margin: auto;
     padding-right: 40px;
@@ -113,13 +113,13 @@
         grid-template-columns: 1fr;
         gap: 0;
     }
-
-    .section.banner {
-        padding: 160px 0 30px;
-    }
 }
 
 @media screen and (max-width: 767px) {
+    .section.banner {
+        padding: 120px 0 80px;
+    }
+
     .banner__title {
         font-size: 52px;
     }
@@ -140,8 +140,12 @@
 }
 
 /* Some of our previous projects include */
+.section.previous {
+    margin-bottom: 115px;
+}
+
 .previous__title__box {
-    width: 30%;
+    max-width: 324px;
     position: relative;
 }
 
@@ -161,5 +165,198 @@
 .previous__title__icon {
     position: absolute;
     top: 0;
+    right: -10px;
+}
+
+.previous__clients {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.previous__client img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .section.previous {
+        margin-bottom: 75px;
+    }
+
+    .previous__clients {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .previous__clients {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .previous__title {
+        font-size: 26px;
+
+    }
+
+    .previous__title__icon {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 403px) {
+    .previous__title__icon {
+        right: 0;
+    }
+}
+
+/* Hand-picked art papers */
+.section.hand-picked {
+    margin-bottom: 120px;
+}
+
+.hand-picked__title {
+    margin: 0 0 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+
+    text-align: center;
+
+    /* Title */
+    color: #474747;
+}
+
+.hand-picked__text {
+    margin: 0 auto 24px;
+    max-width: 437px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: center;
+
+    /* Title */
+    color: #474747;
+}
+
+.hand-picked__icons {
+    display: flex;
+    width: 930px;
+    max-width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hand-picked__box {
+    position: relative;
+    text-align: center;
+    width: 260px;
+    height: 212px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0 45px;
+}
+
+.hand-picked__box.hand-picked__box--wrap-second {
+    height: 182px;
+}
+
+.hand-picked__box.hand-picked__box--wrap-third {
+    height: 166px;
+    margin-top: -15px;
+}
+
+.hand-picked__box .hand-picked__icon {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.hand-picked__box:nth-child(2n) .hand-picked__icon {
+    margin-bottom: -30px;
+}
+
+.hand-picked__box:nth-child(3n) .hand-picked__icon {
+    margin-bottom: -10px;
+}
+
+.hand-picked__box__title {
+    position: relative;
+    margin: 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.36;
+
+    /* text-align: center; */
+    color: #474747;
+
+}
+
+.handle-piecked__decor--left-up {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.handle-piecked__decor--rigth-down {
+    position: absolute;
     right: 0;
+    bottom: 0;
+}
+
+.hand-picked__decor--left-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.hand-picked__decor--right-up {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hand-picked__decor--right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .section.hand-picked {
+        margin-bottom: 75px;
+    }
+
+    .hand-picked__box {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hand-picked__title {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .hand-picked__icons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hand-picked__box {
+        width: 260px;
+    }
 }
